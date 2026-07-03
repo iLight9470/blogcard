@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+    /* CSS Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Global Styles */
+    body {  
+      font-family: 'Figtree', sans-serif;
+      line-height: 1.5;
+      background-color: #f4d04e;
+      color: #333;
+      padding: 1rem;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Blog Card Styles */
+    .blog-card {
+      max-width: 384px;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 20px;
+      border: 1.5px solid #111111;
+      padding: 1.5rem;
+      box-shadow: 8px 8px 0px 0px #111111;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .blog-card:hover {
+      box-shadow: 12px 12px 0px 0px #111111;
+      transform: translate(-2px, -2px);
+    }
+    
+    /* Blog Image Styles */
+    .blog-card .blog-image {
+      width: 100%;
+      border-radius: 20px;
+      height: auto; 
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+
+    .blog-card .badge {
+      display: inline-block;
+      background-color: #f4d04e;
+      color: #111111;
+      padding: 0.25rem 0.75rem;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .blog-card .publish-date {
+      font-size: 16px;
+      color: #111111;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .blog-card h1 {
+      font-size: 24px;
+      margin-bottom: 1rem;
+      color: #111111;
+      font-weight: 800;
+    }
+
+    .blog-card h1:hover {
+      color: #f4d04e;
+    }
+
+    .blog-card .description {
+      font-size: 16px;
+      color: #6B6B6B;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.5px;
+    }
+
+    .blog-card .author-info span {
+      font-size: 16px;
+      color: #111111;
+      font-weight: 800;
+    }
+
+    .blog-card .author-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .blog-card .author-info img {
+      margin-right: 0.75rem;
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  </style>
+  
+</head>
+<body>
+  <!-- Blog Card -->
+  <div class="blog-card">
+    <!-- Blog Image -->
+    <img src="./assets/images/illustration-article.svg" alt="Blog Image" style="width:100%; border-radius: 8px;" class="blog-image">   
+    <!-- Blog Content -->
+    <span class="badge">Learning</span>
+    <!-- Blog Title and Description -->
+    <p class="publish-date">Published 21 Dec 2023</p>
+    <h1>HTML & CSS foundations</h1>
+    <p class="description">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    <!-- Author Info -->
+    <div class="author-info">
+      <img src="./assets/images/image-avatar.webp" alt="Author Avatar" style="width:40px; height: 40px; object-fit: cover; border-radius: 50%;">
+      <span>Greg Hooper</span>
+
+    </div>
+  </div>
+  
+</body>
+</html>
